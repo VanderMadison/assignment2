@@ -1,4 +1,6 @@
-
+/*
+ *Madison Vandersluis
+ */
 
 #include "Jet.h"
 
@@ -39,7 +41,11 @@ double Jet::mileageEstimate(double time){
 			mileage*=1.055;
 		}
 	}
-	else{
-		
-	}
+	return mileage;
 }
+
+string Jet::toString(){
+	return "-> Jet\n" + PoweredVehicle::toString() + "\n\tEngine Number: " +
+		getEngineNum();
+}
+
