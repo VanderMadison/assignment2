@@ -1,0 +1,32 @@
+(a) $ git push origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 810 bytes | 405.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/VanderMadison/assignment2
+   f4975e5..fa4620a  master -> master
+
+(b) There is a total of 9 commits.
+This was found using: git rev-list --all --count
+
+(c) .gitignore file was last modified Wed Sep 25 18:13:30 2019.
+Found with: git log .gitignore
+
+(d) One reason branches are used is to allow team members to work on different features in parallel, if branches weren't used teammates would have to "wait their turn". Another reason to use branches it that they allow for easy backtracking. For example, lets say for an application you've implemented a new feature, but now the client wants it scraped, with branching removing the unwanted code is much easier.
+
+(e) The git log command only deals with the committed history, and allows you to filter and search for specific changes. The git status command inspects the working directory and staging area.
+
+(f) In order to see all the commits involving the file "Vehicle.h" I would use git log --follow Vehicle.h
+
+(g) To see all commits with the word "file" in its commit message I would use git log -g --grep=file
+
+(h) I. Inheritance is a mechanism where you can that allows a class to derive methods and attributes from another. For example a Cat class inherits attributes and methods from a Pet class (like int age, getName(), etc).
+II. Polymorphism is the ability to process objects differently depending on the object's type and class through a single interface. Method overloading is an example of polmorphism.
+III. Encapsulation is the concept of bundling data and methods that work on that data into a unit, like a class. For example getter and setter methods controls access to data and hides it.
+
+(i) The main difference between "Integration manager" and "Dictator and Lietenants" is that for "Integration manager" each developer has two repositories (public/private).
+
+(j) A team of 100 developers would benefit from the "Dictator and Lieutenants" workflow because in the "Centralized" developers need to resolve their conflicts before pushing, this would cause a delay in development as develops can't "develop" while resolving their conflicts especially when integrating each others code. The "Dictator and Lieutenants" workflow, while developers do solve conflicts on their own, Lieutenants also help solve their developer's conflicts, and the Dictator solves their Lieutenants' conflicts. This allows for more work to be done and allows for easier merging. The D&L method doesn't require all the developers' work to be merged into one, and instead merges smaller groups of merged groups.
