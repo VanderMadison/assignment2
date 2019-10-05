@@ -35,7 +35,7 @@ void setEngineNum(int engineNum){
 }
 
 double Jet::mileageEstimate(double time){
-	double mileage = 40 + (rand() % 60);
+	double mileage = time*(40 + (rand() % 60));
 	if(getEngineNum() >= 2){ //boosts mileage by 5.5 percent per engine
 		for (int i=0; i<getEngineNum(); i++){
 			mileage*=1.055;
