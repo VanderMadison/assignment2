@@ -6,7 +6,7 @@
 #include <cstdlib>
 
 Moped::Moped(){
-	ccEngineSize = "50";
+	ccEngineSize = 50;
 	setBrand("Unknown");
 	setModel("Unknown");
 }
@@ -48,6 +48,6 @@ double Moped::mileageEstimate(double time) {
 
 string Moped::toString(){
 	return "-> Moped\n" + PoweredVehicle::toString() + "\n\tEngine Size: " +
-		getEngineSize() + "cc";
+		to_string(getEngineSize()) + "cc";
 }
 

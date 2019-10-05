@@ -14,8 +14,7 @@ class Moped : public PoweredVehicle {
 	public:
 		Moped();
 
-		explicit Moped(string brand, string model, 
-				stringFuelType, int engineSize);
+		explicit Moped(string brand, string model, string FuelType, int engineSize);
 
 		virtual ~Moped();
 		int getEngineSize();
