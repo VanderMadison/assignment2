@@ -6,7 +6,7 @@
 #include <cstdlib>
 #include <cmath>
 
-Skateboard::Skateboard(string brand, strign model){
+Skateboard::Skateboard(string brand, string model){
 	setBrand(brand);
 	setModel(model);
 }
