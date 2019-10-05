@@ -19,7 +19,7 @@ int main() {
     vehiclesArray[3] = new Car("Tesla", "T2", "electricity", "large");
     vehiclesArray[4] = new Bicycle("Mizuno", "Wave", 10);
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
-    vehiclesArray[6] = new Jet("Rocket","NAA","P-51 Mustang","3");
+    vehiclesArray[6] = new Jet("Rocket","NAA","P-51 Mustang", 3);
     vehiclesArray[7] = new Jet();
     vehiclesArray[8] = new Skateboard("Birdhouse", "Full Skull");
     vehiclesArray[9] = new Skateboard("Zoo York", "Empire");
