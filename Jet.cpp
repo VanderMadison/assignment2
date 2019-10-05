@@ -26,7 +26,7 @@ int Jet::getEngineNum(){
 	return numberOfEngines;
 }
 
-void setEngineNum(int engineNum){
+void Jet::setEngineNum(int engineNum){
 	if(engineNum<1){
 		numberOfEngines = 1;
 	}
