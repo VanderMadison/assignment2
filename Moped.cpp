@@ -36,13 +36,13 @@ void Moped::setEngineSize(int engineSize){
 double Moped::mileageEstimate(double time) { 
 	//data source http://www.motorscootershopper.com/how-to-scooter.asp
 	if(getEngineSize() == 50){
-		return (58 + rand()%67)*.01;
+		return time*(58 + rand()%67)*.01;
 	}
 	else if(getEngineSize() == 150){
-		return (83 + rand()%100)*.01;
+		return time*(83 + rand()%100)*.01;
 	}
 	else{
-		return 1.25;
+		return time*1.25;
 	}
 }
 
