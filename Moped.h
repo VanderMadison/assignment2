@@ -18,7 +18,7 @@ class Moped : public PoweredVehicle {
 				stringFuelType, int engineSize);
 
 		virtual ~Moped();
-		string getEngineSize();
+		int getEngineSize();
 		void setEngineSize(int engineSize);
 		virtual double mileageEstimate(double time);
 		virtual string toString();
