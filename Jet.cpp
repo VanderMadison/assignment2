@@ -8,9 +8,9 @@
 Jet::Jet(){
 
 	numberOfEngines = 1;
-	setBrand("");
-	setModel("");
-	setFuelType("");
+	setBrand("Unknown");
+	setModel("Unknown");
+	setFuelType("Jet A-1");
 }
 
 Jet::Jet(string fuelType, string brand, string model, int engineNum){
@@ -37,7 +37,7 @@ void setEngineNum(int engineNum){
 
 double Jet::mileageEstimate(double time){
 	double mileage = time*(40 + (rand() % 60));
-	if(getEngineNum() >= 2){ //boosts mileage by 5.5 percent per engine
+	if(getEngineNum() >= 2 && getFuelType()=="Rocket"){ //boosts mileage by 5.5 percent per engine
 		for (int i=0; i<getEngineNum(); i++){
 			mileage*=1.055;
 		}
