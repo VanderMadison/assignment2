@@ -18,7 +18,7 @@ class Jet : public PoweredVehicle {
 
 		explicit Jet(string fuelType, string brand, string model, int engineNum = 1);
 
-		virtual ~Car();
+		virtual ~Jet();
 		int getEngineNum();
 		void setEngineNum(int engineNum);
 		virtual double mileageEstimate(double time);
